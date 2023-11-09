@@ -1,0 +1,70 @@
+fileFormatVersion: 2
+guid: 7efee9346f0c56044895fdf1ecbfc1a7
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: air-flow
+    second: {fileID: 2100000, guid: 8543f65dced2391408939117feb921d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: air-flow_2
+    second: {fileID: 2100000, guid: 5c6fbf539492ae144bdf08ae3f37a36a, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 804e1ce4c496647cfa3f1a1134187c71, type: 3}
+  _removeEmptyRootObjects: 1
+  _scaleFactor: 1
+  _maximumLod: 300
+  _readWriteEnabled: 1
+  _generateColliders: 0
+  _swapUvs: 0
+  _generateLightmapUVs: 0
+  _importBlendShapeNames: 1
+  _importNormals: 0
+  _importTangents: 0
+  _importAnimations: 2
+  _addAnimatorComponent: 0
+  _animationLoopTime: 0
+  _animationLoopPose: 0
+  _importMaterials: 1
+  _useSceneNameIdentifier: 1
+  _textureCompression: -50
+  optimizeGameObjects: 0
+  materials:
+  - {fileID: 7652879494441908677, guid: 7efee9346f0c56044895fdf1ecbfc1a7, type: 3}
+  - {fileID: 2497830367811795958, guid: 7efee9346f0c56044895fdf1ecbfc1a7, type: 3}
+  - {fileID: 7251640558355321908, guid: 7efee9346f0c56044895fdf1ecbfc1a7, type: 3}
+  - {fileID: -4647882177051350342, guid: 7efee9346f0c56044895fdf1ecbfc1a7, type: 3}
+  - {fileID: -4918536118217818404, guid: 7efee9346f0c56044895fdf1ecbfc1a7, type: 3}
+  - {fileID: -7898816358263194986, guid: 7efee9346f0c56044895fdf1ecbfc1a7, type: 3}
+  - {fileID: -3100396513866075461, guid: 7efee9346f0c56044895fdf1ecbfc1a7, type: 3}
+  - {fileID: 6432634888215261616, guid: 7efee9346f0c56044895fdf1ecbfc1a7, type: 3}
+  - {fileID: -8738250433481388816, guid: 7efee9346f0c56044895fdf1ecbfc1a7, type: 3}
+  - {fileID: 431788478788871596, guid: 7efee9346f0c56044895fdf1ecbfc1a7, type: 3}
+  - {fileID: -5748061923957779096, guid: 7efee9346f0c56044895fdf1ecbfc1a7, type: 3}
+  - {fileID: -2143047013526639451, guid: 7efee9346f0c56044895fdf1ecbfc1a7, type: 3}
+  - {fileID: 6270936671317202070, guid: 7efee9346f0c56044895fdf1ecbfc1a7, type: 3}
+  textures:
+  - {fileID: 1879269872928999137, guid: 7efee9346f0c56044895fdf1ecbfc1a7, type: 3}
+  - {fileID: -7488353403817524125, guid: 7efee9346f0c56044895fdf1ecbfc1a7, type: 3}
+  hasSceneData: 1
+  hasAnimationData: 1
+  hasMaterialData: 1
+  hasTextureData: 1
+  animations:
+  - name: Turbine_Door_L_Open
+  - name: Turbine_Door_R_Open
+  - name: Blades_Rot
+  _extensions: []
+  _textures:
+  - texture: {fileID: 1879269872928999137, guid: 7efee9346f0c56044895fdf1ecbfc1a7, type: 3}
+    shouldBeLinear: 0
+  - texture: {fileID: -7488353403817524125, guid: 7efee9346f0c56044895fdf1ecbfc1a7, type: 3}
+    shouldBeLinear: 0
+  _mainAssetIdentifier: scenes/Scene
