@@ -1,0 +1,27 @@
+.menu {
+    position: absolute;
+    margin: auto;
+    bottom: 16px;
+    z-index: 1;
+}
+
+.menu button {
+    font-size: 0.875em;
+    color: white;
+    background: #0911214D;
+    border: none;
+    border-radius: 21px;
+}
+
+.menu button:hover {
+    opacity: 1;
+}
+
+.vr-button, .ar-button {
+    position: relative;
+    margin: auto;
+}
+
+.not-supported::after{
+    opacity: 0;
+}
