@@ -1950,7 +1950,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: UnityEngine.UI.VerticalLayoutGroup, UnityEngine.UI
   m_Padding:
     m_Left: 31
     m_Right: 31
@@ -2828,7 +2828,7 @@ MonoBehaviour:
     title: AnimatorController
     description: Simple animator controller to transition between two states and
       play a sound effect (no code)
-    image: {fileID: 2800000, guid: b5ee8d6197e82b643866dc2d1eca7b9a, type: 3}
+    image: {fileID: 2800000, guid: e62797d5b7868f04ca41bba93b42c95a, type: 3}
 --- !u!114 &784234929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4583,7 +4583,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 3
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
