@@ -2,29 +2,29 @@
 
 .mainmenu {
     position: absolute;
-    top: 16px; /* Abstand zum oberen Rand */
-    right: 16px; /* Abstand zum rechten Rand */
+    top: 16px;
+    right: 16px;
     display: flex;
-    flex-direction: column; /* Buttons untereinander anordnen */
-    align-items: center; /* Buttons zentrieren horizontal */
-    width: 54px; /* Breite der Hintergrundfläche */
-    height: 234px; /* Höhe der Hintergrundfläche */
-    background: rgba(229, 230, 233, 0.8); /* Hintergrundfarbe mit Opacity */
+    flex-direction: column;
+    align-items: center;
+    width: 54px;
+    height: 234px;
+    background: rgba(229, 230, 233, 0.8);
     border-radius: 27px;
-    backdrop-filter: blur(15px); /* Weichzeichnen des Hintergrunds */
-    box-shadow: 0 0 4px rgba(2, 2, 43, 0.2); /* Schlagschatten */
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 4px rgba(2, 2, 43, 0.2);
     z-index: 1;
     padding-top: 6px;
 }
 
 .mainmenu button {
-    width: 42px; /* Breite des Buttons */
-    height: 42px; /* Höhe des Buttons */
+    width: 42px;
+    height: 42px;
     border: none;
-    border-radius: 50%; /* Kreisform */
-    margin-bottom: 4px; /* Abstand zwischen den Buttons */
-    background: white; /* Standard-Hintergrundfarbe des Buttons */
-    transition: background-color 0.3s; /* Übergangseffekt für Farbänderungen */
+    border-radius: 50%;
+    margin-bottom: 4px;
+    background: white;
+    transition: background-color 0.5s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,29 +33,37 @@
 
 .mainmenu button.active,
 .mainmenu button:hover {
-    background: black; /* Hintergrundfarbe für aktiven Button */
+    background: black; 
 }
 
 .mainmenu button.active img,
-.mainmenu button:hover img {
-    filter: none; /* Icon inaktiv (weiß) */
-}
-
-.mainmenu button .icon img {
-    /* Weißes Icon im normalen Zustand */
-    filter: brightness(0) invert(1);
-}
-
-.mainmenu button:not(.active):not(:hover) .icon img {
-    filter: black;
+.mainmenu button:hover img
+{
+    filter: invert(100%) sepia(0%) saturate(7478%) hue-rotate(317deg) brightness(109%) contrast(99%);
 }
 
 .mainmenu button img {
-    width: 32px; /* Breite des Icons */
-    height: 32px; /* Höhe des Icons */
+    width: 32px;
+    height: 32px;
 }
 
-.mainmenu button.active svg path .cls-2,
-.mainmenu button:hover svg path .cls-2 {
-    fill: black; /* Ändert die Füllfarbe des SVG-Pfads in Schwarz */
+.mainmenu button .state-icon {
+    position: absolute; /* Positionieren Sie das state-icon absolut */
+    top: 9px;
+    left: 11px;
+    width: 32px; /* Breite des Icons */
+    height: 32px; /* Höhe des Icons */
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: none; /* Dadurch wird das state-icon durch Klicks nicht beeinflusst */
+    filter: invert(61%) sepia(85%) saturate(1169%) hue-rotate(92deg) brightness(92%) contrast(86%);
 }
+
+.mainmenu button.active .state-icon,
+.mainmenu button:hover .state-icon
+{
+    filter: invert(61%) sepia(85%) saturate(1169%) hue-rotate(92deg) brightness(92%) contrast(86%);
+}
+
+
+

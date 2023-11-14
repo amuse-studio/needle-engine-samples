@@ -14,7 +14,6 @@
   <meta name="robots" content="index,follow">
   <meta name="url" content="http://needle.tools">
 
-  <link rel="stylesheet" href="src/styles/customXRButtons.css">
   <link rel="stylesheet" href="src/styles/mainmenu.css">
   <link rel="stylesheet" href="./src/styles/style.css">
 </head>
@@ -24,17 +23,23 @@
   <script type="module" src="./src/main.ts"></script>
 
   <div class="mainmenu">
-    <button class="room"><span class="icon"><img src="include/icon-room.svg" alt="Room"></span></button>
+    <button class="room"><span class="state-icon"><img src="include/icon-room-state.svg" alt="Room-State"></span><span class="icon"><img src="include/icon-room.svg" alt="Room"></span></button>
     <button class="help"><span class="icon"><img src="include/icon-help.svg" alt="Help"></span></button>
     <button class="participants"><span class="icon"><img src="include/icon-participants.svg" alt="Participants"></span></button>
     <button class="share"><span class="icon"><img src="include/icon-share.svg" alt="Share"></span></button>
-    <button class="mic"><span class="icon"><img src="include/icon-mic-on.svg" alt="Mic"></span></button>
+    <button class="mic" id="mic-button"><span class="icon"><img src="include/icon-mic-on.svg" alt="Mic-On"></span></button>
   </div>
 
-  <div class="menu">
-    <button class="vr-button">Enter VR</button>
-    <button class="ar-button">Start AR</button>
-  </div>
+  <script>
+    const micButton = document.getElementById('mic-button');
+    const micIcon = micButton.querySelector('.icon img');
+
+    micButton.addEventListener('click', function() {
+        micIcon.src = micIcon.src.includes('icon-mic-on.svg') ? 'include/icon-mic-off.svg' : 'include/icon-mic-on.svg';
+        micButton.style.backgroundColor = micIcon.src.includes('icon-mic-on.svg') ? 'white' : '#E50128';
+    });
+</script>
+
   <needle-engine></needle-engine>
 
 </body>
