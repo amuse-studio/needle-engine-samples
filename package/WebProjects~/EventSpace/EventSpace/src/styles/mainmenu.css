@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap');
+
+.mainmenu {
+    position: absolute;
+    top: 16px; /* Abstand zum oberen Rand */
+    right: 16px; /* Abstand zum rechten Rand */
+    display: flex;
+    flex-direction: column; /* Buttons untereinander anordnen */
+    align-items: center; /* Buttons zentrieren horizontal */
+    width: 54px; /* Breite der Hintergrundfläche */
+    height: 234px; /* Höhe der Hintergrundfläche */
+    background: rgba(229, 230, 233, 0.8); /* Hintergrundfarbe mit Opacity */
+    border-radius: 27px;
+    backdrop-filter: blur(15px); /* Weichzeichnen des Hintergrunds */
+    box-shadow: 0 0 4px rgba(2, 2, 43, 0.2); /* Schlagschatten */
+    z-index: 1;
+    padding-top: 6px;
+}
+
+.mainmenu button {
+    width: 42px; /* Breite des Buttons */
+    height: 42px; /* Höhe des Buttons */
+    border: none;
+    border-radius: 50%; /* Kreisform */
+    margin-bottom: 4px; /* Abstand zwischen den Buttons */
+    background: white; /* Standard-Hintergrundfarbe des Buttons */
+    transition: background-color 0.3s; /* Übergangseffekt für Farbänderungen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mainmenu button.active,
+.mainmenu button:hover {
+    background: black; /* Hintergrundfarbe für aktiven Button */
+}
+
+.mainmenu button.active img,
+.mainmenu button:hover img {
+    filter: none; /* Icon inaktiv (weiß) */
+}
+
+.mainmenu button .icon img {
+    /* Weißes Icon im normalen Zustand */
+    filter: brightness(0) invert(1);
+}
+
+.mainmenu button:not(.active):not(:hover) .icon img {
+    filter: black;
+}
+
+.mainmenu button img {
+    width: 32px; /* Breite des Icons */
+    height: 32px; /* Höhe des Icons */
+}
+
+.mainmenu button.active svg path .cls-2,
+.mainmenu button:hover svg path .cls-2 {
+    fill: black; /* Ändert die Füllfarbe des SVG-Pfads in Schwarz */
+}

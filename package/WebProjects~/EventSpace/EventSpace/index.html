@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <title>Made with Needle</title>
+  
+  <meta property="og:title" content="Made with Needle" />
+  <meta name="description" content="🌵 Made with Needle Engine">
+  <meta property="og:description" content="🌵 Made with Needle Engine" />
+  
+  <meta name="robots" content="index,follow">
+  <meta name="url" content="http://needle.tools">
+
+  <link rel="stylesheet" href="src/styles/customXRButtons.css">
+  <link rel="stylesheet" href="src/styles/mainmenu.css">
+  <link rel="stylesheet" href="./src/styles/style.css">
+</head>
+
+<body>
+  <script type="module" src="./src/generated/gen.js"></script>
+  <script type="module" src="./src/main.ts"></script>
+
+  <div class="mainmenu">
+    <button class="room"><span class="icon"><img src="include/icon-room.svg" alt="Room"></span></button>
+    <button class="help"><span class="icon"><img src="include/icon-help.svg" alt="Help"></span></button>
+    <button class="participants"><span class="icon"><img src="include/icon-participants.svg" alt="Participants"></span></button>
+    <button class="share"><span class="icon"><img src="include/icon-share.svg" alt="Share"></span></button>
+    <button class="mic"><span class="icon"><img src="include/icon-mic-on.svg" alt="Mic"></span></button>
+  </div>
+
+  <div class="menu">
+    <button class="vr-button">Enter VR</button>
+    <button class="ar-button">Start AR</button>
+  </div>
+  <needle-engine></needle-engine>
+
+</body>
+</html>
