@@ -48,14 +48,14 @@
 }
 
 .mainmenu button .state-icon {
-    position: absolute; /* Positionieren Sie das state-icon absolut */
+    position: absolute;
     top: 9px;
     left: 11px;
-    width: 32px; /* Breite des Icons */
-    height: 32px; /* Höhe des Icons */
+    width: 32px; 
+    height: 32px; 
     background-size: cover;
     background-repeat: no-repeat;
-    pointer-events: none; /* Dadurch wird das state-icon durch Klicks nicht beeinflusst */
+    pointer-events: none; 
     filter: invert(61%) sepia(85%) saturate(1169%) hue-rotate(92deg) brightness(92%) contrast(86%);
 }
 
@@ -65,5 +65,52 @@
     filter: invert(61%) sepia(85%) saturate(1169%) hue-rotate(92deg) brightness(92%) contrast(86%);
 }
 
-
+/*Submenu*/
+.submenu {
+    /*display: none;*/
+    position: absolute;
+    top: 16px;
+    right: calc(70px + 10px);
+    width: 333px;
+    background-color: rgba(229, 230, 233);
+    border-radius: 27px;
+    box-shadow: 0 0 4px rgba(2, 2, 43, 0.2);
+    padding: 22px;
+    overflow-y: auto;
+    z-index: 1;
+  }
+  
+  .submenu-title {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #000;
+    margin-bottom: 16px;
+    margin-top: 0px;
+  }
+  
+  .submenu-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #000;
+    border: none;
+    background: none;
+  }
+  
+  .submenu-button img {
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+  }
+    
+  .submenu-content img {
+    max-width: 100%;
+    height: auto;
+  }
 

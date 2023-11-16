@@ -35,7 +35,7 @@
   </div>
 
   <div id="submenu" class="submenu">
-    <h2 class="submenu-title">Untermenü</h2>
+    <h2 class="submenu-title"></h2>
     <div class="submenu-content">
       <!-- Hier wird der dynamische Inhalt hinzugefügt -->
     </div>
@@ -90,6 +90,12 @@
     function openSubmenu(menuType) {
       const submenuData = submenus[menuType];
 
+      // Überprüfen, ob submenuData definiert ist
+      if (!submenuData) {
+        console.error(`SubMenu "${menuType}" not found in submenus.`);
+        return;
+      }
+
       // Titel setzen
       document.querySelector(".submenu-title").textContent = submenuData.title;
 
@@ -97,13 +103,14 @@
       submenuContent.innerHTML = submenuData.content;
 
       submenuData.items.forEach((item) => {
-        const button = document.createElement("button");
+        const submenuButton = document.createElement("button");
+        submenuButton.classList.add("submenu-button"); // Fügt die Klasse hinzu
         const icon = document.createElement("img");
         icon.src = item.icon;
         const buttonText = document.createTextNode(item.text);
-        button.appendChild(icon);
-        button.appendChild(buttonText);
-        submenuContent.appendChild(button);
+        submenuButton.appendChild(icon);
+        submenuButton.appendChild(buttonText);
+        submenuContent.appendChild(submenuButton);
       });
 
       // Submenü anzeigen
@@ -117,38 +124,41 @@
       currentSubMenu = null;
     }
 
-    // Hauptmenü-Buttons aktualisieren, um das Submenü zu öffnen und zu schließen
-    document.querySelector(".room").addEventListener("click", () => {
-      if (currentSubMenu !== "room") {
+    function hideSubmenu() {
+      submenu.classList.remove("open");
+      currentSubMenu = null;
+    }
+
+    // Funktion zum Initialisieren des Seitenzustands
+    function initializePage() {
+      // Standardmäßig kein Submenü anzeigen
+      hideSubmenu();
+
+      // Hauptmenü-Buttons aktualisieren, um das Submenü zu öffnen und zu schließen
+      document.querySelector(".room").addEventListener("click", () => {
         openSubmenu("room");
-      } else {
-        closeSubmenu();
-      }
-    });
+      });
 
-    document.querySelector(".help").addEventListener("click", () => {
-      if (currentSubMenu !== "help") {
+      document.querySelector(".help").addEventListener("click", () => {
         openSubmenu("help");
-      } else {
-        closeSubmenu();
-      }
-    });
+      });
 
-    document.querySelector(".participants").addEventListener("click", () => {
-      if (currentSubMenu !== "participants") {
+      document.querySelector(".participants").addEventListener("click", () => {
         openSubmenu("participants");
-      } else {
-        closeSubmenu();
-      }
-    });
+      });
 
-    document.querySelector(".share").addEventListener("click", () => {
-      if (currentSubMenu !== "share") {
+      document.querySelector(".share").addEventListener("click", () => {
         openSubmenu("share");
-      } else {
-        closeSubmenu();
-      }
-    });
+      });
+
+      // Event Listener für das Schließen des Submenüs hinzufügen
+      document.querySelector(".submenu-title").addEventListener("click", () => {
+        hideSubmenu();
+      });
+    }
+
+    // Seiteninitialisierung aufrufen
+    initializePage();
 
 
 
