@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" href="favicon.ico">
   <meta name="viewport" content="width=device-width, user-scalable=no">
 
   <title>Made with Needle</title>
-  
+
   <meta property="og:title" content="Made with Needle" />
   <meta name="description" content="🌵 Made with Needle Engine">
   <meta property="og:description" content="🌵 Made with Needle Engine" />
-  
+
   <meta name="robots" content="index,follow">
   <meta name="url" content="http://needle.tools">
 
@@ -23,24 +24,138 @@
   <script type="module" src="./src/main.ts"></script>
 
   <div class="mainmenu">
-    <button class="room"><span class="state-icon"><img src="include/icon-room-state.svg" alt="Room-State"></span><span class="icon"><img src="include/icon-room.svg" alt="Room"></span></button>
-    <button class="help"><span class="icon"><img src="include/icon-help.svg" alt="Help"></span></button>
-    <button class="participants"><span class="icon"><img src="include/icon-participants.svg" alt="Participants"></span></button>
-    <button class="share"><span class="icon"><img src="include/icon-share.svg" alt="Share"></span></button>
-    <button class="mic" id="mic-button"><span class="icon"><img src="include/icon-mic-on.svg" alt="Mic-On"></span></button>
+    <button class="room open-submenu"><span class="state-icon"><img src="include/icon-room-state.svg"
+          alt="Room-State"></span><span class="icon"><img src="include/icon-room.svg" alt="Room"></span></button>
+    <button class="help open-submenu"><span class="icon"><img src="include/icon-help.svg" alt="Help"></span></button>
+    <button class="participants open-submenu"><span class="icon"><img src="include/icon-participants.svg"
+          alt="Participants"></span></button>
+    <button class="share open-submenu"><span class="icon"><img src="include/icon-share.svg" alt="Share"></span></button>
+    <button class="mic" id="mic-button"><span class="icon"><img src="include/icon-mic-on.svg"
+          alt="Mic-On"></span></button>
+  </div>
+
+  <div id="submenu" class="submenu">
+    <h2 class="submenu-title">Untermenü</h2>
+    <div class="submenu-content">
+      <!-- Hier wird der dynamische Inhalt hinzugefügt -->
+    </div>
   </div>
 
   <script>
     const micButton = document.getElementById('mic-button');
     const micIcon = micButton.querySelector('.icon img');
 
-    micButton.addEventListener('click', function() {
-        micIcon.src = micIcon.src.includes('icon-mic-on.svg') ? 'include/icon-mic-off.svg' : 'include/icon-mic-on.svg';
-        micButton.style.backgroundColor = micIcon.src.includes('icon-mic-on.svg') ? 'white' : '#E50128';
+    micButton.addEventListener('click', function () {
+      micIcon.src = micIcon.src.includes('icon-mic-on.svg') ? 'include/icon-mic-off.svg' : 'include/icon-mic-on.svg';
+      micButton.style.backgroundColor = micIcon.src.includes('icon-mic-on.svg') ? 'white' : '#E50128';
     });
-</script>
+
+    const submenus = {
+      room: {
+        title: "Room Settings",
+        items: [
+          { icon: "include/icon-room-create.svg", text: "Create new Room" },
+          { icon: "include/icon-room-share.svg", text: "Share Room" },
+          { icon: "include/icon-room-password.svg", text: "Set Room Password" },
+          { icon: "include/icon-room-leave.svg", text: "Leave Room" },
+          { icon: "include/icon-room-leave.svg", text: "Connected" },
+        ],
+      },
+      help: {
+        title: "How to move",
+        content: "<img src='include/instruction.png' alt='How to move Instructions'>",
+      },
+      participants: {
+        title: "Participants",
+        items: [
+          { icon: "include/icon-person.svg", text: "Crazy Duck (You)" },
+          { icon: "include/icon-person.svg", text: "Flying Dutchman" },
+          { icon: "include/icon-person.svg", text: "Magic Mike" },
+        ],
+      },
+      share: {
+        title: "Share",
+        items: [
+          { icon: "include/icon-share-camera.svg", text: "Camera" },
+          { icon: "include/icon-share-screen.svg", text: "Screen" },
+          { icon: "include/icon-share-window.svg", text: "Single Window" },
+        ],
+      },
+    };
+
+    const submenu = document.getElementById("submenu");
+    const submenuContent = submenu.querySelector(".submenu-content");
+    let currentSubMenu = null;
+
+    function openSubmenu(menuType) {
+      const submenuData = submenus[menuType];
+
+      // Titel setzen
+      document.querySelector(".submenu-title").textContent = submenuData.title;
+
+      // Schaltflächen dynamisch erstellen
+      submenuContent.innerHTML = submenuData.content;
+
+      submenuData.items.forEach((item) => {
+        const button = document.createElement("button");
+        const icon = document.createElement("img");
+        icon.src = item.icon;
+        const buttonText = document.createTextNode(item.text);
+        button.appendChild(icon);
+        button.appendChild(buttonText);
+        submenuContent.appendChild(button);
+      });
+
+      // Submenü anzeigen
+      submenu.classList.add("open");
+      currentSubMenu = menuType;
+    }
+
+    function closeSubmenu() {
+      // Submenü ausblenden
+      submenu.classList.remove("open");
+      currentSubMenu = null;
+    }
+
+    // Hauptmenü-Buttons aktualisieren, um das Submenü zu öffnen und zu schließen
+    document.querySelector(".room").addEventListener("click", () => {
+      if (currentSubMenu !== "room") {
+        openSubmenu("room");
+      } else {
+        closeSubmenu();
+      }
+    });
+
+    document.querySelector(".help").addEventListener("click", () => {
+      if (currentSubMenu !== "help") {
+        openSubmenu("help");
+      } else {
+        closeSubmenu();
+      }
+    });
+
+    document.querySelector(".participants").addEventListener("click", () => {
+      if (currentSubMenu !== "participants") {
+        openSubmenu("participants");
+      } else {
+        closeSubmenu();
+      }
+    });
+
+    document.querySelector(".share").addEventListener("click", () => {
+      if (currentSubMenu !== "share") {
+        openSubmenu("share");
+      } else {
+        closeSubmenu();
+      }
+    });
+
+
+
+  </script>
 
   <needle-engine></needle-engine>
 
 </body>
+
 </html>
