@@ -87,7 +87,18 @@
     const submenuContent = submenu.querySelector(".submenu-content");
     let currentSubMenu = null;
 
+    function toggleSubmenu(menuType) {
+  if (currentSubMenu === menuType) {
+    // Wenn das aktuelle Submenü bereits geöffnet ist, schließen Sie es
+    closeSubmenu();
+  } else {
+    // Andernfalls öffnen Sie das ausgewählte Submenü
+    openSubmenu(menuType);
+  }
+}
+
     function openSubmenu(menuType) {
+      closeSubmenu();
       const submenuData = submenus[menuType];
 
       // Überprüfen, ob submenuData definiert ist
@@ -114,7 +125,7 @@
       });
 
       // Submenü anzeigen
-      submenu.classList.add("open");
+      submenu.classList.add("open"); 
       currentSubMenu = menuType;
     }
 
