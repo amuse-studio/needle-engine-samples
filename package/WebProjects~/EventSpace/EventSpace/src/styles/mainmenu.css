@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700;800&display=swap');
 
 .mainmenu {
     position: absolute;
@@ -83,7 +83,7 @@
   .submenu-title {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 32px;
     color: #000;
     margin-bottom: 16px;
@@ -101,16 +101,100 @@
     color: #000;
     border: none;
     background: none;
+    cursor: pointer;
   }
   
   .submenu-button img {
     width: 32px;
     height: 32px;
     margin-right: 6px;
+    margin-left: -6px;
   }
     
   .submenu-content img {
     max-width: 100%;
     height: auto;
+    margin-right: 6px;
   }
 
+  .special {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #919191;
+    border: none;
+    background: none;
+  }
+
+  .special img {
+    width: 16px;
+    height: 16px;
+    filter: invert(61%) sepia(85%) saturate(1169%) hue-rotate(92deg) brightness(92%) contrast(86%);
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .mainmenu {
+        width: 42px;
+        height: auto;
+        padding-bottom: 2px;
+    }
+    
+    .mainmenu button {
+        width: 32px;
+        height: 32px;
+    }
+
+    .mainmenu button img {
+      width: 24px;
+      height: 24px;
+  }
+
+  .mainmenu button .state-icon {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: 24px; 
+    height: 24px; 
+}
+
+.submenu {
+  right: calc(60px + 5px);
+  width: 256px;
+  border-radius: 21px;
+  padding: 16px;
+}
+
+.submenu-title {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+
+.submenu-button {
+  margin-bottom: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.submenu-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.special {
+  margin-top: 10px;
+  font-size: 11px;
+}
+
+.special img {
+  width: 10px;
+  height: 10px;
+}
+
+}

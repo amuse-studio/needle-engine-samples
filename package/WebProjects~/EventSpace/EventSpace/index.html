@@ -37,7 +37,6 @@
   <div id="submenu" class="submenu">
     <h2 class="submenu-title"></h2>
     <div class="submenu-content">
-      <!-- Hier wird der dynamische Inhalt hinzugefügt -->
     </div>
   </div>
 
@@ -58,7 +57,7 @@
           { icon: "include/icon-room-share.svg", text: "Share Room" },
           { icon: "include/icon-room-password.svg", text: "Set Room Password" },
           { icon: "include/icon-room-leave.svg", text: "Leave Room" },
-          { icon: "include/icon-room-leave.svg", text: "Connected" },
+          { icon: "include/icon-state.svg", text: "Connected", special: true },
         ],
       },
       help: {
@@ -68,7 +67,7 @@
       participants: {
         title: "Participants",
         items: [
-          { icon: "include/icon-person.svg", text: "Crazy Duck (You)" },
+          { icon: "include/icon-edit.svg", text: "Crazy Duck (You)" },
           { icon: "include/icon-person.svg", text: "Flying Dutchman" },
           { icon: "include/icon-person.svg", text: "Magic Mike" },
         ],
@@ -88,49 +87,47 @@
     let currentSubMenu = null;
 
     function toggleSubmenu(menuType) {
-  if (currentSubMenu === menuType) {
-    // Wenn das aktuelle Submenü bereits geöffnet ist, schließen Sie es
-    closeSubmenu();
-  } else {
-    // Andernfalls öffnen Sie das ausgewählte Submenü
-    openSubmenu(menuType);
-  }
-}
+      if (currentSubMenu === menuType) {
+        closeSubmenu();
+      } else {
+        openSubmenu(menuType);
+      }
+    }
 
     function openSubmenu(menuType) {
       closeSubmenu();
       const submenuData = submenus[menuType];
 
-      // Überprüfen, ob submenuData definiert ist
       if (!submenuData) {
         console.error(`SubMenu "${menuType}" not found in submenus.`);
         return;
       }
 
-      // Titel setzen
-      document.querySelector(".submenu-title").textContent = submenuData.title;
+      document.querySelector(".submenu-title").textContent = submenuData.title || "Fallback Title";
 
-      // Schaltflächen dynamisch erstellen
-      submenuContent.innerHTML = submenuData.content;
+      submenuContent.innerHTML = submenuData.content || "";
 
       submenuData.items.forEach((item) => {
-        const submenuButton = document.createElement("button");
-        submenuButton.classList.add("submenu-button"); // Fügt die Klasse hinzu
+        const submenuItem = document.createElement("button");
+
+        if (item.special) {
+          submenuItem.classList.add("special");
+        } else {
+          submenuItem.classList.add("submenu-button");
+        }
         const icon = document.createElement("img");
         icon.src = item.icon;
         const buttonText = document.createTextNode(item.text);
-        submenuButton.appendChild(icon);
-        submenuButton.appendChild(buttonText);
-        submenuContent.appendChild(submenuButton);
+        submenuItem.appendChild(icon);
+        submenuItem.appendChild(buttonText);
+        submenuContent.appendChild(submenuItem);
       });
 
-      // Submenü anzeigen
-      submenu.classList.add("open"); 
+      submenu.classList.add("open");
       currentSubMenu = menuType;
     }
 
     function closeSubmenu() {
-      // Submenü ausblenden
       submenu.classList.remove("open");
       currentSubMenu = null;
     }
@@ -140,38 +137,33 @@
       currentSubMenu = null;
     }
 
-    // Funktion zum Initialisieren des Seitenzustands
     function initializePage() {
-      // Standardmäßig kein Submenü anzeigen
+
       hideSubmenu();
 
-      // Hauptmenü-Buttons aktualisieren, um das Submenü zu öffnen und zu schließen
       document.querySelector(".room").addEventListener("click", () => {
-        openSubmenu("room");
+        toggleSubmenu("room");
       });
 
       document.querySelector(".help").addEventListener("click", () => {
-        openSubmenu("help");
+        toggleSubmenu("help");
       });
 
       document.querySelector(".participants").addEventListener("click", () => {
-        openSubmenu("participants");
+        toggleSubmenu("participants");
       });
 
       document.querySelector(".share").addEventListener("click", () => {
-        openSubmenu("share");
+        toggleSubmenu("share");
       });
 
-      // Event Listener für das Schließen des Submenüs hinzufügen
+
       document.querySelector(".submenu-title").addEventListener("click", () => {
         hideSubmenu();
       });
     }
 
-    // Seiteninitialisierung aufrufen
     initializePage();
-
-
 
   </script>
 
