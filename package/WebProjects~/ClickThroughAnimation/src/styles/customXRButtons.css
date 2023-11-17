@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap');
+
+.menu {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 10px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.menu button {
+    font-size: 14px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600;
+    line-height: 32px;
+    color: white;
+    background: #0911214D;
+    border: none;
+    border-radius: 21px;
+    padding: 0 16px;
+    height: 32px;
+    margin-right: 6px;
+    outline: none; 
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.menu button:hover {
+    background: #09112199;
+}
+
+.vr-button, .ar-button {
+    display: inline-flex;
+}
+
+.menu button.not-supported {
+    display: none;
+}
