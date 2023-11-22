@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: d954d77bc65b55246bcdc392712202b4
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bronze
+    second: {fileID: 2100000, guid: 6e89519959b1488499a08bea388db900, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ceramic
+    second: {fileID: 2100000, guid: dfa46ceaab84d7947a5cfe334d8a889d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chrome
+    second: {fileID: 2100000, guid: d73492cd604b5bb448bb303ef49a2119, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cork
+    second: {fileID: 2100000, guid: 6e2469d152100ea45a903f64e0e8e071, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dark
+    second: {fileID: 2100000, guid: e6bb1c96729a678408768dc49e291e66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Emission
+    second: {fileID: 2100000, guid: 8a5df3210e29aeb4f88250aa6b22464f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 5604221ce2b190a418c9a5eaaa7934f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Labe_Big
+    second: {fileID: 2100000, guid: 269bbbad0a082474792adb634f6d2b27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Label_Small
+    second: {fileID: 2100000, guid: cfce0303679046740af173c0bb4740d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Liquid
+    second: {fileID: 2100000, guid: 41ab0a1e9375b5646bfe73de6628a689, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Marbel
+    second: {fileID: 2100000, guid: c02ec577d3e72c04ab9c9a5c4931ad20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Marbel_Black
+    second: {fileID: 2100000, guid: 4c2f6f7d90afdff4899aa59108487b94, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mirror
+    second: {fileID: 2100000, guid: 409d49ff629a4da4e88812b266a9e9f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plant_Dirt
+    second: {fileID: 2100000, guid: ba1999440f280274ca5f9b3ca0f47dd2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plant_Leaves
+    second: {fileID: 2100000, guid: d18410e5c770a1d429ac95167a260ce7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic_Mint
+    second: {fileID: 2100000, guid: b1dedb58fdeb2d94bbddac09c16b0c7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sticks
+    second: {fileID: 2100000, guid: b96d4681687b8bc4dab3e10efea07116, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Towel
+    second: {fileID: 2100000, guid: ec24ea81bc63b614999ad82e6f866082, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TowelBand
+    second: {fileID: 2100000, guid: f445efe104d805c45be5a76b34ab61b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: 690f5790c9a26ac4fbad98d3717f542a, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 804e1ce4c496647cfa3f1a1134187c71, type: 3}
+  _removeEmptyRootObjects: 1
+  _scaleFactor: 1
+  _maximumLod: 300
+  _readWriteEnabled: 1
+  _generateColliders: 0
+  _swapUvs: 0
+  _generateLightmapUVs: 0
+  _importBlendShapeNames: 1
+  _importNormals: 0
+  _importTangents: 0
+  _importAnimations: 2
+  _addAnimatorComponent: 0
+  _animationLoopTime: 1
+  _animationLoopPose: 0
+  _importMaterials: 1
+  _useSceneNameIdentifier: 1
+  _textureCompression: -50
+  optimizeGameObjects: 0
+  materials:
+  - {fileID: 193384353357180888, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: -26075778733232830, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: 1167334478531780225, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: 5125955998383885961, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: -1444460858095362738, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: 7789326555039661116, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: -8510908519459095522, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: -1381909053062557729, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: -9007632685173550870, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: -7255647052170860681, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: -8971841876269128883, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: -6086310191520161254, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: 1862242981099331741, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: 8556262120643298411, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: 5605978712633574805, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: -40635325021332067, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: 3850466104811336786, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: 3368943199463322815, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: 7312631632849987700, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: -1365536989520526082, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: 1142329264681662667, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  - {fileID: 7422749100556107586, guid: d954d77bc65b55246bcdc392712202b4, type: 3}
+  textures:
+  - {fileID: 2800000, guid: 1048ac382ba24d342a27fee8eb12367c, type: 3}
+  - {fileID: 2800000, guid: eeab428d63c03fd46998995f7e3fff32, type: 3}
+  - {fileID: 2800000, guid: a32a9bc257d44194680bf3adddf82820, type: 3}
+  - {fileID: 2800000, guid: 676e39dc69af7724881513ffd739d6c1, type: 3}
+  - {fileID: 2800000, guid: 8f9efd2a0e9df9c46a8ad09ec4fcd55c, type: 3}
+  - {fileID: 2800000, guid: f39cb84bfde308d409b240b626ce66fe, type: 3}
+  - {fileID: 2800000, guid: 9438c1cebd12d0646b5d90d24857dba3, type: 3}
+  - {fileID: 2800000, guid: 5b3b7ea2f0ce00b4384f2c02c62537af, type: 3}
+  - {fileID: 2800000, guid: e62864d3dfab937409f0e525dd1fd020, type: 3}
+  - {fileID: 2800000, guid: f6ab422b6f15b184980c4c881ba6cb3d, type: 3}
+  - {fileID: 2800000, guid: 42855fc2b6de33c43ba42f1c9feb37cc, type: 3}
+  - {fileID: 2800000, guid: 57e2359427bd1fe40a6320991c138688, type: 3}
+  - {fileID: 2800000, guid: 1f7eaebcd12624648b0ab40a44774809, type: 3}
+  - {fileID: 2800000, guid: b57f8dc282a555b48a8ebd4646c69e7e, type: 3}
+  - {fileID: 2800000, guid: 9857340eae7c33c449a6eba49d34697e, type: 3}
+  - {fileID: 2800000, guid: 1f7ba7e8c8a1f2848a8688d6677b7eeb, type: 3}
+  - {fileID: 2800000, guid: c24e8f7cc0b5de5419e8064bf3f127b2, type: 3}
+  hasSceneData: 1
+  hasAnimationData: 0
+  hasMaterialData: 1
+  hasTextureData: 1
+  animations: []
+  _extensions:
+  - name: KHR_materials_emissive_strength
+    supported: 1
+    used: 1
+    required: 0
+  - name: KHR_materials_sheen
+    supported: 1
+    used: 1
+    required: 0
+  - name: KHR_texture_transform
+    supported: 1
+    used: 1
+    required: 1
+  _textures:
+  - texture: {fileID: 2800000, guid: 1048ac382ba24d342a27fee8eb12367c, type: 3}
+    shouldBeLinear: 0
+  - texture: {fileID: 2800000, guid: eeab428d63c03fd46998995f7e3fff32, type: 3}
+    shouldBeLinear: 1
+  - texture: {fileID: 2800000, guid: a32a9bc257d44194680bf3adddf82820, type: 3}
+    shouldBeLinear: 1
+  - texture: {fileID: 2800000, guid: 676e39dc69af7724881513ffd739d6c1, type: 3}
+    shouldBeLinear: 0
+  - texture: {fileID: 2800000, guid: 8f9efd2a0e9df9c46a8ad09ec4fcd55c, type: 3}
+    shouldBeLinear: 1
+  - texture: {fileID: 2800000, guid: f39cb84bfde308d409b240b626ce66fe, type: 3}
+    shouldBeLinear: 0
+  - texture: {fileID: 2800000, guid: 9438c1cebd12d0646b5d90d24857dba3, type: 3}
+    shouldBeLinear: 1
+  - texture: {fileID: 2800000, guid: 5b3b7ea2f0ce00b4384f2c02c62537af, type: 3}
+    shouldBeLinear: 0
+  - texture: {fileID: 2800000, guid: e62864d3dfab937409f0e525dd1fd020, type: 3}
+    shouldBeLinear: 0
+  - texture: {fileID: 2800000, guid: f6ab422b6f15b184980c4c881ba6cb3d, type: 3}
+    shouldBeLinear: 0
+  - texture: {fileID: 2800000, guid: 42855fc2b6de33c43ba42f1c9feb37cc, type: 3}
+    shouldBeLinear: 0
+  - texture: {fileID: 2800000, guid: 57e2359427bd1fe40a6320991c138688, type: 3}
+    shouldBeLinear: 1
+  - texture: {fileID: 2800000, guid: 1f7eaebcd12624648b0ab40a44774809, type: 3}
+    shouldBeLinear: 0
+  - texture: {fileID: 2800000, guid: b57f8dc282a555b48a8ebd4646c69e7e, type: 3}
+    shouldBeLinear: 1
+  - texture: {fileID: 2800000, guid: 9857340eae7c33c449a6eba49d34697e, type: 3}
+    shouldBeLinear: 1
+  - texture: {fileID: 2800000, guid: 1f7ba7e8c8a1f2848a8688d6677b7eeb, type: 3}
+    shouldBeLinear: 0
+  - texture: {fileID: 2800000, guid: c24e8f7cc0b5de5419e8064bf3f127b2, type: 3}
+    shouldBeLinear: 1
+  _mainAssetIdentifier: scenes/Scene
