@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 1fa56e69f1d55af41b0fda6d9009d0be, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: 9ee965a815331b9478eab9f8497e9b39, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 777c9eb2e9a46ff408851d71245b6dcb, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -1412,8 +1412,8 @@ Transform:
   - {fileID: 519983824}
   - {fileID: 706762906}
   - {fileID: 405594349}
-  - {fileID: 1626248742}
   - {fileID: 1457348958}
+  - {fileID: 1626248742}
   - {fileID: 30421463}
   - {fileID: 2097052332}
   m_Father: {fileID: 1597275518}
@@ -1808,7 +1808,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 969208505}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 44.439, y: 21.482, z: 0}
 --- !u!114 &1457348959
 MonoBehaviour:
@@ -2145,6 +2145,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 969208505}
     m_Modifications:
     - target: {fileID: -9077556919667996731, guid: c813e188fa3df1246aeae0d2a5f46172, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -9077556919667996731, guid: c813e188fa3df1246aeae0d2a5f46172, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -2402,7 +2406,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 560953873032254230, guid: c813e188fa3df1246aeae0d2a5f46172, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 560953873032254230, guid: c813e188fa3df1246aeae0d2a5f46172, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 601626130441420242, guid: c813e188fa3df1246aeae0d2a5f46172, type: 3}
       propertyPath: m_IsActive
@@ -2526,7 +2534,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5118853317304039254, guid: c813e188fa3df1246aeae0d2a5f46172, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5118853317304039254, guid: c813e188fa3df1246aeae0d2a5f46172, type: 3}
       propertyPath: m_StaticEditorFlags
