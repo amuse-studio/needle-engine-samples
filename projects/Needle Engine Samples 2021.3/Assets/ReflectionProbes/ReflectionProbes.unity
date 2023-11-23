@@ -486,7 +486,7 @@ ReflectionProbe:
   m_RenderDynamicObjects: 0
   m_UseOcclusionCulling: 1
   m_Importance: 1
-  m_CustomBakedTexture: {fileID: 8900000, guid: 916076ea4f82e774c991d6b0d97c0e90, type: 3}
+  m_CustomBakedTexture: {fileID: 8900000, guid: 6d80dc90a54354768850e6ca37e42dac, type: 3}
 --- !u!1 &691125482
 GameObject:
   m_ObjectHideFlags: 0
