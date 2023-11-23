@@ -1,18 +1,8 @@
 fileFormatVersion: 2
-guid: 9cc352a0efe66f54998a6d35fa3d92b6
+guid: 75a6dcc27017ae148a3cbe8831f19acd
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Concrete_white_ Mat
-    second: {fileID: 2100000, guid: 16bb6d673e67a724e8a14bb5f468cf3c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Glow_NoShadow
-    second: {fileID: 2100000, guid: 45cb3ed7046fe2043aaf06289315b229, type: 2}
+  externalObjects: {}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -37,18 +27,13 @@ ScriptedImporter:
   _textureCompression: -50
   optimizeGameObjects: 0
   materials:
-  - {fileID: 7167765312570052045, guid: 9cc352a0efe66f54998a6d35fa3d92b6, type: 3}
-  - {fileID: -8928994827759505092, guid: 9cc352a0efe66f54998a6d35fa3d92b6, type: 3}
+  - {instanceID: 0}
   textures: []
   hasSceneData: 1
   hasAnimationData: 0
   hasMaterialData: 1
   hasTextureData: 0
   animations: []
-  _extensions:
-  - name: KHR_materials_emissive_strength
-    supported: 1
-    used: 1
-    required: 0
+  _extensions: []
   _textures: []
   _mainAssetIdentifier: scenes/Scene

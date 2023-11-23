@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9cc352a0efe66f54998a6d35fa3d92b6
+guid: e57f4d64604ad1846a460590a5c3b346
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects:
@@ -7,12 +7,12 @@ ScriptedImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Concrete_white_ Mat
-    second: {fileID: 2100000, guid: 16bb6d673e67a724e8a14bb5f468cf3c, type: 2}
+    second: {fileID: 2100000, guid: ed977d41871b3d04698db68bcec38a5f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Glow_NoShadow
-    second: {fileID: 2100000, guid: 45cb3ed7046fe2043aaf06289315b229, type: 2}
+      name: Glow_NoShadow_Mat
+    second: {fileID: 2100000, guid: dfb1577bf055c814aa16ac615cc48725, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -37,8 +37,8 @@ ScriptedImporter:
   _textureCompression: -50
   optimizeGameObjects: 0
   materials:
-  - {fileID: 7167765312570052045, guid: 9cc352a0efe66f54998a6d35fa3d92b6, type: 3}
-  - {fileID: -8928994827759505092, guid: 9cc352a0efe66f54998a6d35fa3d92b6, type: 3}
+  - {fileID: 7167765312570052045, guid: e57f4d64604ad1846a460590a5c3b346, type: 3}
+  - {fileID: -2756541031203330398, guid: e57f4d64604ad1846a460590a5c3b346, type: 3}
   textures: []
   hasSceneData: 1
   hasAnimationData: 0

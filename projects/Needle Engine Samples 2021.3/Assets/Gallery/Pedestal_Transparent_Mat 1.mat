@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Pedestal_Transparent_Mat
+  m_Name: Pedestal_Transparent_Mat 1
   m_Shader: {fileID: -6465566751694194690, guid: 0a931320a74ca574b91d2d7d4557dcf1, type: 3}
   m_ValidKeywords:
   - _TEXTURE_TRANSFORM_ON

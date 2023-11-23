@@ -288,6 +288,22 @@ MonoBehaviour:
     Projects:
     - ProjectPath: Library/Needle/Sample
     BuilderScene: 
+  - Path: Packages/com.needle.engine-samples/Runtime/ExternalContent/ExternalContent.unity
+    Projects:
+    - ProjectPath: Library/Needle/Sample
+    BuilderScene: 
+  - Path: Assets/ReflectionProbes/ReflectionProbes.unity
+    Projects:
+    - ProjectPath: Library/Needle/Sample
+    BuilderScene: 
+  - Path: Assets/ExternalContent_Galery/ExternalContent.unity
+    Projects:
+    - ProjectPath: Library/Needle/Sample
+    BuilderScene: 
+  - Path: Assets/Gallery_Particles/Particles.unity
+    Projects:
+    - ProjectPath: Library/Needle/Sample
+    BuilderScene: 
   Projects:
   - ProjectPath: Library/Needle/Sample
   - ProjectPath: ../../package/WebProjects~/Scrollytelling
