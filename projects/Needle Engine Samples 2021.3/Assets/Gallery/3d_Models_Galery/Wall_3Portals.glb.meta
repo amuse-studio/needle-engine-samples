@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3f6037fd0bfe72944ad4b0bd5d0491c2
+guid: 30ad18774a78d694c871cae02a7ad056
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -27,7 +27,7 @@ ScriptedImporter:
   _textureCompression: -50
   optimizeGameObjects: 0
   materials:
-  - {fileID: -7970075820242967374, guid: 3f6037fd0bfe72944ad4b0bd5d0491c2, type: 3}
+  - {fileID: 5550162149459822614, guid: 30ad18774a78d694c871cae02a7ad056, type: 3}
   textures: []
   hasSceneData: 1
   hasAnimationData: 0

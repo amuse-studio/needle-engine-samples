@@ -19,7 +19,7 @@ ScriptedImporter:
   _readWriteEnabled: 1
   _generateColliders: 0
   _swapUvs: 0
-  _generateLightmapUVs: 0
+  _generateLightmapUVs: 1
   _importBlendShapeNames: 1
   _importNormals: 0
   _importTangents: 0

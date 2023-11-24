@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3f6037fd0bfe72944ad4b0bd5d0491c2
+guid: aa9563bcee39e1e43b0c66e073983a45
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -14,7 +14,7 @@ ScriptedImporter:
   _readWriteEnabled: 1
   _generateColliders: 0
   _swapUvs: 0
-  _generateLightmapUVs: 1
+  _generateLightmapUVs: 0
   _importBlendShapeNames: 1
   _importNormals: 0
   _importTangents: 0
@@ -27,11 +27,11 @@ ScriptedImporter:
   _textureCompression: -50
   optimizeGameObjects: 0
   materials:
-  - {fileID: -7970075820242967374, guid: 3f6037fd0bfe72944ad4b0bd5d0491c2, type: 3}
+  - {instanceID: 0}
   textures: []
   hasSceneData: 1
   hasAnimationData: 0
-  hasMaterialData: 1
+  hasMaterialData: 0
   hasTextureData: 0
   animations: []
   _extensions: []

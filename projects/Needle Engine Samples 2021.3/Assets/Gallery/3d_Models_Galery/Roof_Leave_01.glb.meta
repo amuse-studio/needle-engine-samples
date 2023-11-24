@@ -14,7 +14,7 @@ ScriptedImporter:
   _readWriteEnabled: 1
   _generateColliders: 0
   _swapUvs: 0
-  _generateLightmapUVs: 0
+  _generateLightmapUVs: 1
   _importBlendShapeNames: 1
   _importNormals: 0
   _importTangents: 0
@@ -27,7 +27,7 @@ ScriptedImporter:
   _textureCompression: -50
   optimizeGameObjects: 0
   materials:
-  - {instanceID: 0}
+  - {fileID: 7167765312570052045, guid: 2809711a40fbc9b4989e3a1f070fdd99, type: 3}
   textures: []
   hasSceneData: 1
   hasAnimationData: 0
