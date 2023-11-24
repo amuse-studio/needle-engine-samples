@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Pedestal_dark_Transparent_Mat
+  m_Name: Pedestal_Transparent_Mat
   m_Shader: {fileID: -6465566751694194690, guid: 0a931320a74ca574b91d2d7d4557dcf1, type: 3}
   m_ValidKeywords:
   - _TEXTURE_TRANSFORM_ON
@@ -158,7 +158,7 @@ Material:
     - transmissionTextureTexCoord: 0
     m_Colors:
     - attenuationColor: {r: 1, g: 1, b: 1, a: 0}
-    - baseColorFactor: {r: 1, g: 0.75, b: 1, a: 1}
+    - baseColorFactor: {r: 1, g: 1, b: 1, a: 1}
     - emissiveFactor: {r: 0, g: 0, b: 0, a: 0}
     - specularColorFactor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
