@@ -384,12 +384,16 @@ PrefabInstance:
       value: Texture sheet animation
       objectReference: {fileID: 0}
     - target: {fileID: 1549412361373217205, guid: 86c1ae6e0ee92004597303e0ea1a3120, type: 3}
+      propertyPath: m_Range
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1549412361373217205, guid: 86c1ae6e0ee92004597303e0ea1a3120, type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1549412361373217205, guid: 86c1ae6e0ee92004597303e0ea1a3120, type: 3}
       propertyPath: m_BounceIntensity
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1549412361373217205, guid: 86c1ae6e0ee92004597303e0ea1a3120, type: 3}
       propertyPath: m_BoundingSphereOverride.w
@@ -30157,7 +30161,7 @@ PrefabInstance:
     - target: {fileID: -5045373824169208073, guid: 4391d6dda315d8a48af5b7eb78c11397, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c293c23ad240d54469ea179b6a59204a, type: 2}
+      objectReference: {fileID: 2100000, guid: 2ab8149ec4775284bada96c1b85b4a09, type: 2}
     - target: {fileID: -3910990755373119420, guid: 4391d6dda315d8a48af5b7eb78c11397, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -96225,7 +96229,7 @@ PrefabInstance:
     - target: {fileID: -5045373824169208073, guid: a5e43c8a6d21c294a8bfdf6d8ebeeb9f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c293c23ad240d54469ea179b6a59204a, type: 2}
+      objectReference: {fileID: 2100000, guid: 2ab8149ec4775284bada96c1b85b4a09, type: 2}
     - target: {fileID: -3910990755373119420, guid: a5e43c8a6d21c294a8bfdf6d8ebeeb9f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -101320,7 +101324,7 @@ PrefabInstance:
     - target: {fileID: -5045373824169208073, guid: 30ad18774a78d694c871cae02a7ad056, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c293c23ad240d54469ea179b6a59204a, type: 2}
+      objectReference: {fileID: 2100000, guid: 2ab8149ec4775284bada96c1b85b4a09, type: 2}
     - target: {fileID: -3910990755373119420, guid: 30ad18774a78d694c871cae02a7ad056, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -146604,7 +146608,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.75
   m_Range: 1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
